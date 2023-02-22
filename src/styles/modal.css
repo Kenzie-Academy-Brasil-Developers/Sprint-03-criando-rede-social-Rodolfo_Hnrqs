@@ -1,0 +1,94 @@
+.modalBoxContainer{
+    z-index: 3;
+}
+.modalBoxContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.modalCard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white-fixed);
+    width: 90%;
+    height: 90%;
+    border-radius: 0.5rem;
+    padding: 2.5rem 1.5rem;
+    gap: 2.125rem;
+    overflow-y: scroll;
+
+    position: relative;
+
+}
+
+.modalPostContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.modalPostContent > span{
+    font-weight: 700;
+    font-size: var(--size-title-1);
+    line-height: 2.5rem;
+
+    color: var(--color-grey-1);
+    height: auto;
+    width: 100%;
+    
+}
+
+.modalPostContent > p{
+    font-weight: 400;
+    font-size: var(--size-text-1);
+    line-height: 1.75rem;
+    
+    color: var(--color-grey-2);
+    width: 100%;
+
+}
+
+.closeBtn{
+    border-radius: 100%;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--color-white-fixed);
+    color: var(--color-grey-3);
+    font-weight: 700;
+    font-size: var(--size-title-1);
+    font-family: 'Nunito', sans-serif;
+
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.closeBtn:hover{
+    background-color: var(--color-grey-5);
+}
+
+@media(min-width: 767px){
+    .modalCard{
+        height: auto;
+        overflow-y: hidden;
+    }
+}
+@media(min-width: 900px){
+    .modalCard{
+        max-width: 47.815rem;
+        margin-top: -9.375rem;
+        height: auto;
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,371 @@
+nav{
+    max-width: 100%;
+    width: 100%;
+    height: 6.25rem;
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.875rem 1.25rem;
+    font-size: var(--size-title-1);
+    font-weight: 800;
+    line-height: 2.5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav > button{
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+    font-weight: 400;
+    font-size: var(--size-text-2);
+    line-height: 1rem;
+
+    border: none;
+    cursor: pointer;
+}
+
+nav > button:hover{
+    text-decoration: underline;
+}
+
+.userMiniature{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 6.25rem;
+    background-color: var(--color-white-fixed);
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.25rem;
+    gap: 1.625rem;
+    width: 100%;
+}
+
+.formTitle, .sugestionsCardTitle, .postCardTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    
+}
+
+.formInfo, .cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.formInfo > p, .cardInfo > p{
+    font-weight: 600;
+    font-size: var(--size-title-2);
+
+    color: var(--color-grey-1);
+}
+
+.formInfo > span, .cardInfo > span{
+    font-weight: 400;
+    font-size: var(--size-text-2);
+    
+    color: var(--color-grey-2);
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer > input, textarea{
+    margin-top: 1.625rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    border: solid 2px var(--color-grey-4);
+    outline-color: var(--color-primary);
+    color: var(--color-grey-2);
+    resize: none;
+}
+
+.inputContainer > input:hover, textarea:hover{
+    border: solid 2px var(--color-primary);
+}
+
+.inputContainer > input::-webkit-input-placeholder{
+    font-size: var(--size-text-2);
+    font-weight: 400;
+    color: var(--color-grey-3);
+}
+
+#inputTextArea{
+    height: 8.125rem;
+}
+
+.inputContainer > button{
+    width: 4.313rem;
+    align-self: flex-end;
+    background-color: var(--color-grey-4);
+    border: none;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+    color: var(--color-grey-3);
+    font-weight: 600;
+    font-size: var(--size-text-2);
+    margin-top: 1.625rem;
+}
+
+.inputContainer > button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white-fixed);
+}
+
+.sugestionsMainTitle{
+    color: var(--color-grey-1);
+    font-weight: 600;
+    font-size: var(--size-title-2);
+}
+
+.sugestions{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    padding: 3rem 1.25rem;
+    width: 100%;
+}
+
+.sugestionsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 3.75rem;
+    margin-top: 3.75rem;
+}
+
+.sugestionsCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: auto;
+}
+
+.sugestionsCard > button{
+    width: max-content;
+    padding: 0.375rem 0.75rem;
+}
+
+.sugestionsCardTitle{
+    width: auto;
+}
+
+.cardInfo{
+    width: 11.25rem;
+}
+
+.unfollowed{
+    border: 1px solid black;
+    color: var(--color-grey-1);
+    background-color: var(--color-white-fixed);
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: var(--size-text-2);
+}
+
+.unfollowed:hover{
+    background-color: #EDF2FF;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.followed{
+    background-color: var(--color-primary);
+    color: var(--color-white-fixed);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: var(--size-text-2);
+    font-weight: 600;
+}
+
+.feed{
+    padding: 3rem 1.25rem;
+}
+
+.feedTitle{
+    color: var(--color-grey-1);
+    font-weight: 700;
+    font-size: var(--size-title-1);
+}
+
+.postCardContainer{
+    padding-top: 3.25rem;
+}
+
+.postCard{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 3.125rem;
+}
+
+.postContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: auto;
+}
+
+.postContent > span{
+    font-weight: 700;
+    font-size: var(--size-title-1);
+    line-height: 2.5rem;
+
+    color: var(--color-grey-1);
+
+    width: 100%;
+}
+
+.postContent > p {
+    font-weight: 400;
+    font-size: var(--size-text-1);
+    line-height: 1.75rem;
+    
+    color: var(--color-grey-2);
+    height: 7.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.postFooter{
+    display: flex;
+    flex-direction: row;
+
+    gap: 2rem;
+}
+
+.openPost{
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+    font-weight: 600;
+    font-size: var(--size-text-2);
+}
+
+.openPost:hover{
+    background-color: var(--color-grey-0);
+}
+
+.likeBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    background-color: var(--color-white-fixed);
+
+    font-weight: 400;
+    font-size: var(--size-text-2);
+}
+
+@media(min-width: 900px){
+    nav{
+        padding: 1.875rem 6.25rem;
+    }
+
+    .form__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45%;
+        height: 32rem;
+        
+    }
+
+    form{
+        display: flex;
+        width: 100%;
+        height: 32rem;
+        max-width: 44.688rem;
+        padding-left: 6.25rem;
+        position: relative; 
+    }
+
+    .sugestionsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 3.75rem;
+        overflow-y: auto;
+
+    }
+
+    .sugestions{
+        display: inline-block;
+        gap: 3.75rem;
+        width: 45%;
+        max-width: 35.625rem;
+        position: sticky;
+        top: 6.575rem;
+        padding-right: 6.25rem;   
+    
+    }
+
+    .sugestionsCard{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sugestionsCard > button{
+        height: max-content;
+    }
+
+    .feed{
+        padding: 3.125rem 6.25rem ;
+        width: 44.688rem;
+    }
+
+    .postCardContainer{
+        width: 100%;
+    }
+
+    .postCard{
+        width: 95%;
+    }
+
+    .postContent > p {
+        height: 3.25rem;
+    }  
+}
+
+@media(min-width: 2200px){
+    .feed{
+        width: 60%;
+    }
+}
